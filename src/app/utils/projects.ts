@@ -89,6 +89,21 @@ export const projects: projectI[] = [
       'devicon-docker-plain',
     ],
   },
+  {
+    title: 'Aplicacion Notificaciones Nodejs',
+    description:
+      'Una aplicación para notificaciones hecho con Nodejs y Socket.io, el cual permite enviar notificaciones en tiempo real a los usuarios conectados.',
+    color: '#ff6969',
+    images: ['./assets/images/portfolio/web-socket.png'],
+    technologies: [
+      'devicon-nestjs-original',
+      'devicon-typescript-plain',
+      'devicon-rxjs-plain',
+      'devicon-angular-plain',
+      'devicon-postgresql-plain',
+      'devicon-docker-plain',
+    ],
+  },
 ];
 
 export interface projectI {
