@@ -14,7 +14,6 @@ import { ModalComponent } from './components/modal/modal.component';
   selector: 'app-root',
   standalone: true,
   imports: [
-    RouterOutlet,
     CommonModule,
     SocialButtonsComponent,
     ActionsButtonsComponent,

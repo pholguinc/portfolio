@@ -5,6 +5,7 @@ export const projects: projectI[] = [
       'Me encargué del desarrollo de interfaces con flutter y desarrollo de Apis y servicios en Nestjs, implementación de base de datos en PostgreSQL, además de la implementación de un sistema de autenticación con JWT.',
     color: '#7269ff',
     images: ['./assets/images/portfolio/app-citas-medicas.png'],
+    url: '',
     technologies: [
       'devicon-flutter-plain',
       'devicon-nestjs-original',
@@ -19,6 +20,7 @@ export const projects: projectI[] = [
       'Es un sistema de web para registro de incidencias y control de inventario, también el traspaso de material entre sedes, desarrollado con Angular 17 y Nestjs, implementación de base de datos en PostgreSQL, además de la implementación de un sistema de autenticación con JWT.',
     color: '#63cbb2',
     images: ['./assets/images/portfolio/inventario.png'],
+    url: '',
     technologies: [
       'devicon-react-original',
       'devicon-typescript-plain',
@@ -32,6 +34,7 @@ export const projects: projectI[] = [
       'Una aplicación web diseñada para gestionar ventas para óptica y optometría el cual se está implementando microservicios con NestJS y Nats para la comunicación entre los servicios, además de la implementación de un sistema de autenticación con JWT.',
     color: '#ff6969',
     images: ['./assets/images/portfolio/optica.png'],
+    url: '',
     technologies: [
       'devicon-nestjs-original',
       'devicon-typescript-plain',
@@ -48,6 +51,7 @@ export const projects: projectI[] = [
       'Una aplicación web diseñada para gestionar ventas e inventario de una óptica y optometría el cual se está implementando microservicios con NestJS y Nats para la comunicación entre los servicios, además de la implementación de un sistema de autenticación con JWT.',
     color: '#ff6969',
     images: ['./assets/images/portfolio/sunat.png'],
+    url: 'https://github.com/pholguinc/api-sunat',
     technologies: [
       'devicon-nestjs-original',
       'devicon-typescript-plain',
@@ -64,6 +68,7 @@ export const projects: projectI[] = [
       'Una aplicación nativa para android para el control de asistencia de alumnos el cual está implementado con Android Studio en Java con APi hecha en Laravel.',
     color: '#ff6969',
     images: ['./assets/images/portfolio/app-qr.png'],
+    url: '',
     technologies: [
       'devicon-nestjs-original',
       'devicon-typescript-plain',
@@ -80,6 +85,7 @@ export const projects: projectI[] = [
       'Una aplicación web para el control de pedidos de un restaurante el cual está implementado con PHP Nativo.',
     color: '#ff6969',
     images: ['./assets/images/portfolio/restaurante.png'],
+    url: 'https://github.com/pholguinc/sistema-restaurante',
     technologies: [
       'devicon-nestjs-original',
       'devicon-typescript-plain',
@@ -95,6 +101,7 @@ export const projects: projectI[] = [
       'Una aplicación para notificaciones hecho con Nodejs y Socket.io, el cual permite enviar notificaciones en tiempo real a los usuarios conectados.',
     color: '#ff6969',
     images: ['./assets/images/portfolio/web-socket.png'],
+    url: 'https://github.com/pholguinc/websocket',
     technologies: [
       'devicon-nestjs-original',
       'devicon-typescript-plain',
@@ -111,5 +118,6 @@ export interface projectI {
   description: string,
   color: string,
   images: string[],
+  url: string,
   technologies: string[],
 }

@@ -60,12 +60,13 @@
         <ng-container *ngFor="let project of projects">
           <div class="project-item">
             <ng-container *ngFor="let image of project.images">
-              <img
+              <a [href]="project.url" target="_blank">
+                <img
                 class="project-picture "
                 [src]="image"
                 [alt]="project.title"
-                (click)="openModal(project)"
               />
+              </a>
               <div class="project-info">
                 <h3 class="accent-color">
                   {{ project.title }}
