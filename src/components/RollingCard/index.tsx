@@ -1,6 +1,12 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { Pencil, BrandChrome,Mobile,FileText,Search } from "@mynaui/icons-react";
+import {
+  Pencil,
+  BrandChrome,
+  Mobile,
+  FileText,
+  Search,
+} from "@mynaui/icons-react";
 import {
   motion,
   useMotionValue,
@@ -9,7 +15,6 @@ import {
   PanInfo,
   ResolvedValues,
 } from "framer-motion";
-
 
 const CARD_CONTENT = [
   {
@@ -99,7 +104,11 @@ const RollingGallery: React.FC<RollingGalleryProps> = ({
     if (autoplay) {
       const currentAngle = rotation.get();
       startInfiniteSpin(currentAngle);
-    } else {
+    }
+  }, [autoplay]);
+
+  useEffect(() => {
+    if (!autoplay) {
       controls.stop();
     }
   }, [autoplay]);
@@ -191,7 +200,9 @@ const RollingGallery: React.FC<RollingGalleryProps> = ({
               <div className="bg-gradient-to-br from-gray-900/90 to-gray-300/30 rounded-md p-6 border border-purple-500 shadow-lg transform transition-all duration-300 ease-out group-hover:scale-105 h-50 w-auto sm:h-48 sm:w-50 md:h-50 md:w-62 xl:w-65">
                 <div className="flex items-center space-x-2 justify-start">
                   {contentItem.icon && <span>{contentItem.icon}</span>}
-                  <h3 className="text-sm md:text-md lg:text-lg font-extrabold">{contentItem.title}</h3>
+                  <h3 className="text-sm md:text-md lg:text-lg font-extrabold">
+                    {contentItem.title}
+                  </h3>
                 </div>
                 <p className="text-xs text-center mt-4">
                   {contentItem.description}
