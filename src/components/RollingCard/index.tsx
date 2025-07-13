@@ -197,7 +197,7 @@ const RollingGallery: React.FC<RollingGalleryProps> = ({
               }}
             >
               {/* Card */}
-              <div className="bg-gradient-to-br from-gray-900/90 to-gray-300/30 rounded-md p-6 border border-purple-500 shadow-lg transform transition-all duration-300 ease-out group-hover:scale-105 h-50 w-auto sm:h-48 sm:w-50 md:h-50 md:w-62 xl:w-65">
+              <div className="bg-gradient-to-br from-gray-900/90 to-gray-300/30 rounded-md p-6 border border-purple-500  hover:shadow-purple-600 transition duration-300 shadow-lg transform transition-all duration-300 ease-out group-hover:scale-105 h-50 w-auto sm:h-48 sm:w-50 md:h-50 md:w-62 xl:w-65">
                 <div className="flex items-center space-x-2 justify-start">
                   {contentItem.icon && <span>{contentItem.icon}</span>}
                   <h3 className="text-sm md:text-md lg:text-lg font-extrabold">
