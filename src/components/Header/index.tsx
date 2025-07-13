@@ -8,7 +8,7 @@ export default function Header() {
         <h1 className="text-2xl md:text-4xl font-bold hover:scale-115 transition-transform duration-300">
           <a href="/">
             Pedro{" "}
-            <span className="bg-gradient-to-b from-purple-600 to-black/10 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-b from-purple-600 to-stone-900 bg-clip-text text-transparent">
               /Dev
             </span>
           </a>
