@@ -124,9 +124,9 @@ export default function ProfessionalTraining() {
               <MetaBalls
                 color="#ffffff"
                 cursorBallColor="#ffffff"
-                cursorBallSize={2}
+                cursorBallSize={1}
                 ballCount={20}
-                animationSize={25}
+                animationSize={30}
                 enableMouseInteraction={true}
                 enableTransparency={true}
                 hoverSmoothness={0.05}

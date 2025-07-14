@@ -24,7 +24,7 @@ const items = [
   {
     icon: <Briefcase size={30} />,
     label: "Professional Training",
-    href: "/Professional-training",
+    href: "/ProfessionalTraining",
   },
   {
     icon: <RoomService size={30} />,
@@ -39,7 +39,7 @@ const items = [
   {
     icon: <AddQueue size={30} />,
     label: "Professional careers",
-    href:"/Professional-careers",
+    href:"/ProfessionalCareers",
   },
 ];
 
