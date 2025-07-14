@@ -1,8 +1,6 @@
 "use client";
-
-import { section } from "framer-motion/client";
 import React from "react";
-import "@/components/Hero/index.css"; // Assuming you have a CSS file for styles
+import "@/components/Hero/index.css"; 
 
 export default function Hero() {
   return (
