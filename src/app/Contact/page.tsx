@@ -25,8 +25,8 @@ const Contact: React.FC = () => {
                     scope="row"
                     className="opacity-100 transform-none text-left "
                   >
-                    <h6 className="text-xl font-semibold mr-70 md:mr-4 ">
-                      E-mail
+                    <h6 className="text-xl bg-gradient-to-r from-gray-500 to-gray-300 bg-clip-text text-transparent  font-semibold mr-70 md:mr-4 ">
+                      MAIL
                     </h6>
                   </th>
                   <td className="opacity-100 transform-none">
@@ -58,8 +58,8 @@ const Contact: React.FC = () => {
                     scope="row"
                     className="opacity-100 transform-none text-left align-top"
                   >
-                    <h6 className="text-xl font-semibold mr-45 md:mr-4 mb-2">
-                      Réseaux sociaux
+                    <h6 className="text-xl bg-gradient-to-r from-gray-500 to-gray-300 bg-clip-text text-transparent font-semibold mr-45 md:mr-4 mb-2">
+                      SOCIAL MEDIAS
                     </h6>
                   </th>
                   <td>

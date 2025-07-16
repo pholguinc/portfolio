@@ -35,13 +35,13 @@ export default function Hero() {
           <div className="flex justify-between gap-4 sm:gap-2  ">
             <a
               href="/Projects"
-              className="w-40 lg:w-60 bg-purple-600 hover:bg-purple-700 text-white font-medium py-2 px-6 rounded-full transition flex items-center justify-center"
+              className="w-40 lg:w-60 bg-purple-700 hover:bg-transparent hover:border border-purple-700 text-white font-bold py-2 px-6 rounded-full transition flex items-center justify-center"
             >
               View projects
             </a>
             <a
             href="/Contact"
-            className="w-40 lg:w-60 border border-gray-600 text-white font-medium py-2 px-6 rounded-full hover:bg-gray-600 transition flex items-center justify-center">
+            className="w-40 lg:w-60 border text-white font-bold py-2 px-6 rounded-full bg-gray-600 transition flex items-center justify-center hover:border-gray-600 hover:bg-transparent">
               Contact
             </a>
           </div>

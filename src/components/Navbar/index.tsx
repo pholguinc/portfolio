@@ -179,7 +179,7 @@ export default function Navbar({
           isHovered.set(0);
           mouseX.set(Infinity);
         }}
-        className={`${className} fixed bottom-10 left-1/2 transform -translate-x-1/2 flex items-end w-fit gap-4 rounded-full border-neutral-700 border-2 pb-2 px-4 z-50 bg-[radial-gradient(circle_at_center,_rgba(168,85,247,0.4),_rgba(6,0,16,0.2))] `}
+        className={`${className} fixed bottom-10 left-1/2 transform -translate-x-1/2 flex items-end w-fit gap-4 rounded-full border-neutral-700 border-2 pb-2 px-4 z-50 bg-[radial-gradient(circle_at_center,_rgba(168,85,247,1),_rgba(6,0,16,1))] `}
         style={{ height: panelHeight }}
         role="toolbar"
         aria-label="Application navbar"

@@ -13,6 +13,7 @@ export default function ProfessionalTraining() {
       description:
         "University program focused on software development, databases, networking, and systems analysis.",
       hasCertificate: true,
+      certificateLink: "/certificates/systems-engineering.pdf",
     },
     {
       date: "Mar 2021",
@@ -21,6 +22,7 @@ export default function ProfessionalTraining() {
       description:
         "Data extraction and automation using Python tools for academic and professional use.",
       hasCertificate: true,
+      certificateLink: "/certificates/web-scraping-python.pdf",
     },
     {
       date: "Jan 2022",
@@ -29,6 +31,7 @@ export default function ProfessionalTraining() {
       description:
         "Built scalable APIs combining Node.js frameworks with efficient GraphQL queries.",
       hasCertificate: true,
+      certificateLink: "/certificates/nestjs-graphql.pdf",
     },
     {
       date: "Jul 2020",
@@ -37,6 +40,7 @@ export default function ProfessionalTraining() {
       description:
         "Completed full-stack web training with JavaScript, Node.js, Express, and REST API practices.",
       hasCertificate: false,
+      certificateLink: "/certificates/web-development-nodejs.pdf",
     },
   ];
 
@@ -95,13 +99,13 @@ export default function ProfessionalTraining() {
           className="grid justify-between max-w-3xl grid-cols-2 gap-6 mt-12 md:grid-cols-4 md:gap-6"
         >
           <div className="px-4 border-2 border-transparent border-e-gray-100">
-            <p className="text-purple-500 flex mb-2 text-xl font-semibold md:text-4xl ">
+            <p className="text-purple-500 flex mb-2 text-2xl font-semibold md:text-4xl ">
               +{courseCount}
             </p>
             <span className="text-white text-xl">Courses complete</span>
           </div>
           <div>
-            <p className="text-purple-500 flex mb-2 text-xl font-semibold md:text-4xl ">
+            <p className="text-purple-500 flex mb-2 text-2xl font-semibold md:text-4xl ">
               +{certificateCount}
             </p>
             <span className="text-white text-xl">certificates obtained</span>
@@ -120,7 +124,7 @@ export default function ProfessionalTraining() {
 
           {/* MetaBalls component on the right, fixed and centered */}
           {isDesktop && (
-            <div className="fixed top-1/2 right-0 transform -translate-y-1/2 md:w-1/3  mt-8 z-10">
+            <div className="fixed top-1/2 right-0 transform -translate-y-1/2 md:w-1/3  mt-8">
               <MetaBalls
                 color="#ffffff"
                 cursorBallColor="#ffffff"
