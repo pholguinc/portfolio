@@ -3,9 +3,7 @@ import React, { useEffect, useState } from "react";
 import {
   Pencil,
   BrandChrome,
-  Mobile,
-  FileText,
-  Search,
+  Mobile
 } from "@mynaui/icons-react";
 import {
   motion,
