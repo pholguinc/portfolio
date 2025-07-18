@@ -74,9 +74,9 @@ export default function SplashCursor({
     const canvas = canvasRef.current;
     if (!canvas) return;
 
-    const pointers: Pointer[] = [pointerPrototype()];
+    let pointers: Pointer[] = [pointerPrototype()];
 
-    const config = {
+    let config = {
       SIM_RESOLUTION: SIM_RESOLUTION!,
       DYE_RESOLUTION: DYE_RESOLUTION!,
       CAPTURE_RESOLUTION: CAPTURE_RESOLUTION!,
@@ -130,8 +130,8 @@ export default function SplashCursor({
 
       const isWebGL2 = "drawBuffers" in gl;
 
-      const supportLinearFiltering = false;
-      const halfFloat = null;
+      let supportLinearFiltering = false;
+      let halfFloat = null;
 
       if (isWebGL2) {
         (gl as WebGL2RenderingContext).getExtension("EXT_color_buffer_float");
