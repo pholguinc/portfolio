@@ -13,7 +13,7 @@ export default function Header() {
             <span className="bg-gradient-to-b from-purple-600 to-stone-900 bg-clip-text text-transparent">
               /Dev
             </span>
-          </a>
+          </Link>
         </h1>
 
         <nav>
