@@ -1,12 +1,14 @@
 import React from "react";
 import { BrandLinkedin, BrandGithub } from "@mynaui/icons-react";
+import Link from "next/link";
+
 export default function Header() {
   const iconClass = "w-8 h-8 md:w-12 md:h-12 hover:opacity-70 transition";
   return (
     <header className="text-white px-10 py-5">
       <div className="container mx-auto flex justify-between items-center ">
         <h1 className="text-2xl md:text-4xl font-bold hover:scale-115 transition-transform duration-300">
-          <a href="/">
+          <Link href="/">
             Pedro{" "}
             <span className="bg-gradient-to-b from-purple-600 to-stone-900 bg-clip-text text-transparent">
               /Dev

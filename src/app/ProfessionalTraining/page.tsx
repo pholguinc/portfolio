@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import TrainingItem from "@/components/TimeLine";
 import MetaBalls from "@/components/MetaBalls";
-import { ins } from "framer-motion/client";
+
 
 export default function ProfessionalTraining() {
   const trainingData = [

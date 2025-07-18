@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import {At, BrandInstagram, BrandFacebookSolid, ChatDots} from '@mynaui/icons-react'
+import {At, ChatDots} from '@mynaui/icons-react'
 
 const Contact: React.FC = () => {
   return (
