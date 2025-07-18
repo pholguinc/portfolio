@@ -4,6 +4,8 @@ import {
   Pencil,
   BrandChrome,
   Mobile,
+  FileText,
+  Search,
 } from "@mynaui/icons-react";
 import {
   motion,
