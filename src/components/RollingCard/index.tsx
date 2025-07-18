@@ -62,12 +62,13 @@ const RollingGallery: React.FC<RollingGalleryProps> = ({
   const [isScreenSizeSm, setIsScreenSizeSm] = useState<boolean>(
     window.innerWidth <= 640
   );
-  useEffect(() => {
+useEffect(() => {
   const checkScreen = () => setIsScreenSizeSm(window.innerWidth <= 640);
-  checkScreen(); 
+  checkScreen(); // corre una vez en el cliente
   window.addEventListener("resize", checkScreen);
   return () => window.removeEventListener("resize", checkScreen);
 }, []);
+
 
   const cylinderWidth: number = isScreenSizeSm ? 1100 : 1800;
   const faceCount: number = galleryContent.length;
