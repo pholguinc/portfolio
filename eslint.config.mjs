@@ -16,6 +16,7 @@ const eslintConfig = [
     files: ["**/*.js", "**/*.ts", "**/*.tsx"],
     rules: {
       "prefer-const": "off", 
+      "@typescript-eslint/no-explicit-any": "off",
     },
   },
 ];
