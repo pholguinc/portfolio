@@ -1,0 +1,62 @@
+/* Estilo del efecto de máquina de escribir */
+@keyframes typing-first {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 50%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes typing-second {
+  0% {
+    width: 0;
+  }
+    50% {
+        width: 50%;
+    }
+  100% {
+    width: 100%;
+  }
+}
+
+/* Animación para detener el cursor después de la animación de la primera línea */
+@keyframes stop-cursor {
+  100% {
+    border-color: transparent; /* Hacemos el cursor invisible */
+  }
+}
+
+/* Animación para parpadear el cursor */
+@keyframes blink {
+  50% {
+    border-color: transparent; /* Hacemos el cursor invisible */
+  }
+  100% {
+    border-color: white; /* Hacemos el cursor visible de nuevo */
+  }
+}
+
+.typing-effect {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 4px solid white; /* El cursor */
+  width: 0;
+  animation-timing-function: steps(30); /* Para que la animación se haga en pasos */
+}
+
+/* Animación para la primera línea (FullStack) */
+#first-line {
+  animation: typing-first 3s steps(20) forwards, stop-cursor 0s 3s forwards; /* Después de 3 segundos, se detiene el cursor */
+  animation-delay: 0s;
+}
+
+/* Animación para la segunda línea (Developer) */
+#second-line {
+  animation: typing-second 2s steps(10) forwards, blink 1s step-end infinite; /* Parpadeo continuo después de escribir */
+  animation-delay: 3s; /* Retraso para que empiece después de que termine la animación de la primera línea */
+}
