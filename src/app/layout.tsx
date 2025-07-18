@@ -18,27 +18,27 @@ import "./globals.css";
 const items = [
   {
     icon: <Home size={30} />,
-    label: "Home",
+    label: "Inicio",
     href:"/",
   },
   {
     icon: <Briefcase size={30} />,
-    label: "Professional Training",
+    label: "Desarrollo Profesional",
     href: "/ProfessionalTraining",
   },
   {
     icon: <RoomService size={30} />,
-    label: "Services",
+    label: "Servicios",
     href:"/Services",
   },
   {
     icon: <Code size={30} />,
-    label: "Projects",
+    label: "Proyectos",
     href:"/Projects",
   },
   {
     icon: <AddQueue size={30} />,
-    label: "Professional careers",
+    label: "Experiencia Profesional",
     href:"/ProfessionalCareers",
   },
 ];

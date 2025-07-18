@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import TrainingItem from "@/components/TimeLine";
 import MetaBalls from "@/components/MetaBalls";
+import { ins } from "framer-motion/client";
 
 export default function ProfessionalTraining() {
   const trainingData = [
@@ -11,36 +12,86 @@ export default function ProfessionalTraining() {
       title: "Systems engineering",
       institution: "University Cesar Vallejo",
       description:
-        "University program focused on software development, databases, networking, and systems analysis.",
-      hasCertificate: true,
-      certificateLink: "/certificates/systems-engineering.pdf",
+        "Actualmente estoy cursando la carrera de ingeniería de sistemas en la Universidad César Vallejo, donde he adquirido conocimientos fundamentales en programación, bases de datos y desarrollo de software.",
+      hasCertificate: false,
+      certificateLink: "webscraping-python.pdf",
     },
     {
-      date: "Mar 2021",
+      date: "Feb 2023",
       title: "Web Scraping with Python",
       institution: "University Cesar Vallejo",
       description:
-        "Data extraction and automation using Python tools for academic and professional use.",
+        "Taller práctico de web scraping utilizando Python y bibliotecas como BeautifulSoup y Scrapy.",
       hasCertificate: true,
-      certificateLink: "/certificates/web-scraping-python.pdf",
+      certificateLink: "webscraping-python.pdf",
+    },
+  
+  
+    {
+      date: "Agos 2023",
+      title: "Universidad Angular - De Cero a Experto",
+      institution: "Udemy",
+      description:"Curso básico de Angular desde cero hasta experto, cubriendo todos los aspectos fundamentales y avanzados del framework.",
+      hasCertificate: true,
+      certificateLink: "https://www.udemy.com/certificate/UC-9e7e515e-1a1b-494b-8b7e-f2e95574060f/"
+
     },
     {
-      date: "Jan 2022",
-      title: "NestJS + GraphQL",
+      date: "Agos 2023",
+      title: "Angular Avanzado: Lleva tus bases al siguiente nivel - 2022",
       institution: "Udemy",
       description:
-        "Built scalable APIs combining Node.js frameworks with efficient GraphQL queries.",
+        "MEAN, Google Signin, JWT, carga de archivos, lazyload, optimizaciones, Git, GitHub, panel administrativo, etc.",
       hasCertificate: true,
-      certificateLink: "/certificates/nestjs-graphql.pdf",
+      certificateLink: "https://www.udemy.com/certificate/UC-9e7e515e-1a1b-494b-8b7e-f2e95574060f",
     },
     {
-      date: "Jul 2020",
-      title: "Web Development Path: Node.js",
+      date: "Mar 2024",
+      title: "NestJS + Microservicios: Aplicaciones escalables y modulares",
+      institution: "DevTalles",
+      description: "Curso de NestJS para construir aplicaciones escalables y modulares utilizando microservicios, Docker y Kubernetes y NATS",
+      hasCertificate: true,
+      certificateLink: "https://cursos.devtalles.com/certificates/nyebozowta",
+    },
+    {
+      date: "Jun 2024",
+      title: "Node - Autenticación Rest con Clean Architecture",
+      institution: "DevTalles",
+      description: "Curso de Node.js para implementar autenticación RESTful utilizando Clean Architecture, JWT y Bcrypt, con enfoque en buenas prácticas de desarrollo en Clean Architecture.",
+      hasCertificate: true,
+      certificateLink: "https://cursos.devtalles.com/certificates/vyeidt2ae0",
+    },
+    {
+      date: "Jun 2024",
+      title: "Nest: Desarrollo backend escalable con Node",
+      institution: "DevTalles",
+      description: "Curso completo de NestJS para construir aplicaciones backend escalables con Node.js utilizando TypeScript y Clean Code.",
+      hasCertificate: true,
+      certificateLink: "https://cursos.devtalles.com/certificates/53ffmgsayl",
+    },
+    {
+      date: "Jul 2024",
+      title: "NestJS + Reportes: Genera PDFs desde Node",
+      institution: "DevTalles",
+      description: "Curso práctico de NestJS para generar reportes en PDF desde Node.js, utilizando herramientas como PDFMake",
+      hasCertificate: true,
+      certificateLink: "https://cursos.devtalles.com/certificates/oryyqrel9g",
+    },
+    {
+      date: "May 2025",
+      title: "Flutter - Móvil: De Cero a Experto",
+      institution: "Udemy",
+      description: "Curso completo de Flutter para desarrollar aplicaciones móviles nativas de alta calidad con Dart, cubriendo desde los fundamentos hasta técnicas avanzadas con Clean Architecture.",
+      hasCertificate: true,
+      certificateLink: "https://www.udemy.com/certificate/UC-cef0e341-0fb7-4ca3-806d-d3a3debe5c1a",
+    },
+    {
+      date: "Jun 2025",
+      title: "Curso de ReactJS",
       institution: "Platzi",
-      description:
-        "Completed full-stack web training with JavaScript, Node.js, Express, and REST API practices.",
-      hasCertificate: false,
-      certificateLink: "/certificates/web-development-nodejs.pdf",
+      description: "Curso práctico de ReactJS para construir interfaces de usuario interactivas y dinámicas utilizando la biblioteca de React.",
+      hasCertificate: true,
+      certificateLink: "https://platzi.com/p/holguinpedro90/curso/11887-course/diploma/detalle/",
     },
   ];
 
@@ -93,7 +144,7 @@ export default function ProfessionalTraining() {
     <div className="p-6 text-white">
       <div className="w-full max-w-6xl px-4 pb-40 mx-auto md:pb-0 md:px-6">
         <h2 className="text-2xl font-bold text-white md:text-4xl">
-          Professional <span className="text-purple-500">training</span>
+          Desarrollo <span className="text-purple-500">Profesional</span>
         </h2>
         <div
           className="grid justify-between max-w-3xl grid-cols-2 gap-6 mt-12 md:grid-cols-4 md:gap-6"
@@ -102,13 +153,13 @@ export default function ProfessionalTraining() {
             <p className="text-purple-500 flex mb-2 text-2xl font-semibold md:text-4xl ">
               +{courseCount}
             </p>
-            <span className="text-white text-xl">Courses complete</span>
+            <span className="text-white text-xl">Cursos completos</span>
           </div>
           <div>
             <p className="text-purple-500 flex mb-2 text-2xl font-semibold md:text-4xl ">
               +{certificateCount}
             </p>
-            <span className="text-white text-xl">certificates obtained</span>
+            <span className="text-white text-xl">Certificados obtenidos</span>
           </div>
         </div>
 

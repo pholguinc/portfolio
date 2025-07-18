@@ -19,34 +19,29 @@ import {
 const CARD_CONTENT = [
   {
     icon: <Pencil size={30} />,
-    title: "Design Website",
+    title: "Diseño Web",
     description:
-      "Designing a website involves creating a visually appealing and user-friendly interface that meets the needs of the target audience.",
+      "Gestion fácilmente el contenido de tu sitio web  con una interfaz intuitiva y amigable, olvídese de la complejidad técnica y concéntrese en lo que realmente importa: su negocio.",
   },
   {
     icon: <BrandChrome size={30} />,
-    title: "Develop Web App",
+    title: "Aplicaciones Web",
     description:
-      "Developing a web application requires a combination of front-end and back-end technologies to create a functional and interactive user experience.",
+      "Desarrollo aplicaciones web personalizadas que se adaptan a tus necesidades específicas, utilizando las últimas tecnologías y mejores prácticas de desarrollo.",
   },
   {
     icon: <Mobile size={30} />,
-    title: "Develop Mobile App",
+    title: "Aplicaciones Móviles",
     description:
-      "Developing a mobile application involves creating software specifically designed for mobile devices, ensuring optimal performance and user experience.",
+      "Desarrollo aplicaciones móviles nativas y multiplataforma que ofrecen una experiencia de usuario excepcional en dispositivos iOS y Android.",
   },
   {
-    icon: <FileText size={30} />,
-    title: "Documentation",
+    icon: <Mobile size={30} />,
+    title: "Automatización de Procesos",
     description:
-      "Documentation is essential for providing clear instructions and information about the software, ensuring users can effectively utilize its features.",
+      "Ofrecemos soluciones de automatización de procesos para mejorar la eficiencia y reducir costos en tu negocio.",
   },
-  {
-    icon: <Search size={30} />,
-    title: "SEO Optimization",
-    description:
-      "optimizing a website for search engines to improve visibility and ranking in search results.",
-  },
+ 
 ];
 
 interface RollingGalleryProps {
@@ -77,8 +72,9 @@ const RollingGallery: React.FC<RollingGalleryProps> = ({
 
   const cylinderWidth: number = isScreenSizeSm ? 1100 : 1800;
   const faceCount: number = galleryContent.length;
-  const faceWidth: number = (cylinderWidth / faceCount) * 1.5;
-  const radius: number = cylinderWidth / (2 * Math.PI);
+  const faceWidth: number = (cylinderWidth / faceCount) * 1.2;
+  const radius: number = (cylinderWidth / (2 * Math.PI)) * 0.6; 
+
 
   const dragFactor: number = 0.05;
   const rotation = useMotionValue(0);

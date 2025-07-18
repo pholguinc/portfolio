@@ -23,12 +23,12 @@ export default function TimeLine({ item }: TimeLineProps) {
         rel="noopener noreferrer"
         className="text-sm text-green-400 mt-2 hover:underline transition duration-200 flex items-center"
       >
-        Certificate obtained <ArrowLongUpRight size={15}/> 
+        Certificado <ArrowLongUpRight size={15}/> 
       </a>
     );
   } else if (item.hasCertificate) {
     certificateContent = (
-      <p className="text-sm text-green-400 mt-2">Certificate obtained</p>
+      <p className="text-sm text-green-400 mt-2">Certificados</p>
     );
   }
 

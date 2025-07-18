@@ -9,7 +9,8 @@ interface ProjectCardProps {
   imageSrc: string;
   description: string;
   githubUrl: string;
-  liveUrl: string;
+  liveUrl?: string;
+  showLiveLink?: boolean;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -19,6 +20,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   description,
   githubUrl,
   liveUrl,
+  showLiveLink = false,
 }) => {
   const [open, setOpen] = useState(false);
 
@@ -52,9 +54,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             <a href={githubUrl} target="_blank" rel="noopener noreferrer">
               <BrandGithub className="hover:text-purple-400 transition" />
             </a>
-            <a href={liveUrl} target="_blank" rel="noopener noreferrer">
-              <Globe className="hover:text-purple-400 transition" />
-            </a>
+            {showLiveLink && liveUrl && (
+              <a href={liveUrl} target="_blank" rel="noopener noreferrer">
+                <Globe className="hover:text-purple-400 transition" />
+              </a>
+            )}
           </div>
 
           <button
@@ -84,9 +88,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               <a href={githubUrl} target="_blank" rel="noopener noreferrer">
                 <BrandGithub className="hover:text-purple-400 transition" />
               </a>
+              {showLiveLink && liveUrl && (
               <a href={liveUrl} target="_blank" rel="noopener noreferrer">
                 <Globe className="hover:text-purple-400 transition" />
               </a>
+            )}
             </div>
           </div>
         </div>

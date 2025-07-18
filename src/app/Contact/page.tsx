@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import {At, BrandInstagram, BrandFacebookSolid} from '@mynaui/icons-react'
+import {At, BrandInstagram, BrandFacebookSolid, ChatDots} from '@mynaui/icons-react'
 
 const Contact: React.FC = () => {
   return (
@@ -9,7 +9,7 @@ const Contact: React.FC = () => {
         <div className="opacity-100 transform-none ">
           <div>
             <div className="pb-2 text-start ">
-              <h2 className="text-4xl md:text-6xl font-bold">CONTACT</h2>
+              <h2 className="text-4xl md:text-6xl font-bold">CONTACTO</h2>
             </div>
             <hr className="mb-6 text-purple-600" />
           </div>
@@ -33,12 +33,12 @@ const Contact: React.FC = () => {
                     <div className="link-wrapper">
                       <div className="link">
                         <a
-                          href="mailto:hello@itssharl.ee"
+                          href="mailto:holguinpedro90@gmail.com"
                           target="_blank"
                           rel="noreferrer"
                           className="flex flex-row gap-2 text-lg hover:underline block"
                         >
-                          <At/> Pedro@gmail.com
+                          <At/> holguinpedro90@gmail.com
                         </a>
                       </div>
                       <div className="link-underline transform -translate-x-full translate-z-0"></div>
@@ -68,18 +68,18 @@ const Contact: React.FC = () => {
                         <div className="link-wrapper">
                           <div className="link">
                             <a
-                              href="https://www.instagram.com/itssharl.ee/"
+                              href="https://wa.link/lkc3u6"
                               target="_blank"
                               rel="noreferrer"
                               className="flex flex-row gap-2 hover:underline text-base md:text-lg block"
                             >
-                              <BrandInstagram /> Instagram
+                              <ChatDots /> WhatsApp
                             </a>
                           </div>
                           <div className="link-underline transform -translate-x-full translate-z-0"></div>
                         </div>
                       </li>
-                      <li className="opacity-100 transform-none">
+                      {/* <li className="opacity-100 transform-none">
                         <div className="link-wrapper">
                           <div className="link">
                             <a
@@ -93,7 +93,7 @@ const Contact: React.FC = () => {
                           </div>
                           <div className="link-underline transform -translate-x-full translate-z-0"></div>
                         </div>
-                      </li>
+                      </li> */}
                     </ul>
                   </td>
                 </tr>
