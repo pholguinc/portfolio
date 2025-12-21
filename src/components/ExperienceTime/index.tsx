@@ -6,7 +6,7 @@ interface ExperienceItem {
   role: string;
   company: string;
   dateRange: string;
-  description: string;
+  description: string | string[];
   techs: string[];
 }
 
@@ -48,16 +48,15 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = ({
                   type="button"
                   onMouseEnter={() => setActiveIndex(index)}
                   className={`group w-full text-left relative grid p-10  rounded-lg transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 
-    ${
-      isActive
-        ? "opacity-100 bg-[#262626]/50 shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] drop-shadow-lg"
-        : "opacity-60"
-    }
+    ${isActive
+                      ? "opacity-100 bg-[#262626]/50 shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] drop-shadow-lg"
+                      : "opacity-60"
+                    }
   `}
                 >
                   <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block" />
                   <header
-                    className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
+                    className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-white sm:col-span-2"
                     aria-label={item.dateRange}
                   >
                     {item.dateRange}
@@ -72,9 +71,17 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = ({
                       </span>
                     </h3>
 
-                    <p className="mt-2 text-sm leading-normal">
-                      {item.description}
-                    </p>
+                    {Array.isArray(item.description) ? (
+                      <ul className="mt-2 text-sm leading-normal list-disc list-inside space-y-1">
+                        {item.description.map((desc, idx) => (
+                          <li key={idx}>{desc}</li>
+                        ))}
+                      </ul>
+                    ) : (
+                      <p className="mt-2 text-sm leading-normal whitespace-pre-line">
+                        {item.description}
+                      </p>
+                    )}
 
                     <ul
                       className="mt-2 flex flex-wrap"
@@ -95,7 +102,7 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = ({
           })}
         </ol>
 
-        {resumeLink && (
+        {/* {resumeLink && (
           <div className="mt-12">
             <a
               className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-purple-500 focus-visible:text-purple-500 font-semibold group/link text-base"
@@ -109,7 +116,7 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = ({
               </span>
             </a>
           </div>
-        )}
+        )} */}
       </div>
     </section>
   );

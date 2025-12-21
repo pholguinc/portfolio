@@ -41,7 +41,7 @@ const CARD_CONTENT = [
     description:
       "Ofrecemos soluciones de automatización de procesos para mejorar la eficiencia y reducir costos en tu negocio.",
   },
- 
+
 ];
 
 interface RollingGalleryProps {
@@ -73,7 +73,7 @@ const RollingGallery: React.FC<RollingGalleryProps> = ({
   const cylinderWidth: number = isScreenSizeSm ? 1100 : 1800;
   const faceCount: number = galleryContent.length;
   const faceWidth: number = (cylinderWidth / faceCount) * 1.2;
-  const radius: number = (cylinderWidth / (2 * Math.PI)) * 0.6; 
+  const radius: number = (cylinderWidth / (2 * Math.PI)) * 0.6;
 
 
   const dragFactor: number = 0.05;
@@ -187,9 +187,8 @@ const RollingGallery: React.FC<RollingGalleryProps> = ({
               className="group absolute flex h-fit items-center justify-center p-[8%] [backface-visibility:hidden] md:p-[6%]"
               style={{
                 width: `${faceWidth}px`,
-                transform: `rotateY(${
-                  (360 / faceCount) * i
-                }deg) translateZ(${radius}px)`,
+                transform: `rotateY(${(360 / faceCount) * i
+                  }deg) translateZ(${radius}px)`,
               }}
             >
               {/* Card */}

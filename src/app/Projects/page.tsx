@@ -40,6 +40,68 @@ function Projects() {
           githubUrl="https://github.com/pholguinc/appsubsidio-v2"
           liveUrl="/"
         />
+        <ProjectCard
+          title="Backend para consulta RUC SUNAT"
+          techs={["Python", "FastAPI"]}
+          imageSrc="/sunat-webscraping.jpeg"
+          description="Backend para consulta RUC SUNAT con Webscraping"
+          githubUrl="https://github.com/pholguinc/webscraping-sunat"
+          liveUrl="/"
+        />
+        <ProjectCard
+          title="Automatización de proyectos NestJS"
+          techs={["Nodejs", "TypeScript", "NestJS"]}
+          imageSrc="/nestjs-hexa-services.png"
+          description="Librería para automatización de proyectos NestJS"
+          githubUrl="https://www.npmjs.com/package/nest-hexa-services"
+          liveUrl="/"
+        />
+
+        <ProjectCard
+          title="App para Gestión de Soporte Técnico"
+          techs={["Nodejs", "TypeScript", "NestJS"]}
+          imageSrc="/soporte-app.png"
+          description="App para gestión Soporte Técnico"
+          githubUrl="https://github.com/pholguinc/soporte-app"
+          liveUrl="/"
+        />
+
+        <ProjectCard
+          title="Módulo de farmacia Arquitectura Hexagonal"
+          techs={["Python", "Django", "Docker", "PostgreSQL"]}
+          imageSrc="/farmacia-django.png"
+          description="Backend para módulo de farmacia Arquitectura Hexagonal"
+          githubUrl="https://github.com/pholguinc/farmacia-back"
+          liveUrl="/"
+        />
+
+        <ProjectCard
+          title="Landing para evento ASME EnginZone"
+          techs={["ReactJS", "TypeScript", "Tailwind CSS"]}
+          imageSrc="/asme.png"
+          description="Landing para evento ASME EnginZone"
+          githubUrl="https://github.com/pholguinc/asme"
+          liveUrl="https://asme-rho.vercel.app/"
+          showLiveLink={true}
+        />
+
+        <ProjectCard
+          title="Servicio de envío de correos electrónicos"
+          techs={["Nodejs", "TypeScript", "NestJS"]}
+          imageSrc="/mail.png"
+          description="Servicio de envío de correos electrónicos"
+          githubUrl="https://github.com/pholguinc/mail-asme"
+        />
+
+        <ProjectCard
+          title="Librería de componentes UI Angular"
+          techs={["Angular", "TailwindCSS", "TypeScript"]}
+          imageSrc="/twng-elements.png"
+          description="Librería de componentes UI Angular"
+          githubUrl="https://www.npmjs.com/package/twng-elements-ui"
+          showLiveLink={true}
+          liveUrl="https://twngelements-docs.vercel.app/"
+        />
       </div>
     </div>
   );

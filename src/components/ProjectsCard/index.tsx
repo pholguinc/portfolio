@@ -26,30 +26,32 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
   return (
     <>
-      <div className="relative bg-black/30 backdrop-blur-sm rounded-xl border border-purple-500 p-4 text-white shadow-md hover:shadow-purple-600 transition duration-300 w-full max-w-xs sm:max-w-sm md:max-w-md">
-        <h2 className="text-xl font-extrabold mb-2">
+      <div className="relative bg-black/30 backdrop-blur-sm rounded-xl border border-purple-500 p-3 sm:p-4 text-white shadow-md hover:shadow-purple-600 transition duration-300 w-full max-w-[280px] sm:max-w-sm md:max-w-md min-h-[350px] sm:min-h-[380px] h-auto flex flex-col">
+        <h2 className="text-base sm:text-xl font-extrabold mb-2 line-clamp-2 min-h-[48px] sm:min-h-[56px]">
           {title}
         </h2>
-        <div className="flex flex-wrap gap-2 mb-2">
+        <div className="flex flex-wrap gap-1 sm:gap-2 mb-2 min-h-[24px] sm:min-h-[28px] items-center">
           {techs.map((tech) => (
             <span
               key={tech}
-              className="text-xs border border-purple-500 text-white rounded-full px-3 py-0.5"
+              className="text-[10px] sm:text-xs border border-purple-500 text-white rounded-full px-2 sm:px-3 py-0.5 flex items-center justify-center leading-normal"
             >
               {tech}
             </span>
           ))}
         </div>
 
-        <Image
-          src={imageSrc}
-          alt={title}
-          width={300}
-          height={180}
-          className="rounded-md object-cover w-full h-auto"
-        />
+        <div className="relative w-full h-[140px] sm:h-[160px] flex-shrink-0">
+          <Image
+            src={imageSrc}
+            alt={title}
+            fill
+            sizes="(max-width: 640px) 280px, (max-width: 768px) 384px, 448px"
+            className="rounded-md object-cover"
+          />
+        </div>
 
-        <div className="flex justify-between items-center mt-4 px-2">
+        <div className="flex justify-between items-center mt-auto pt-4 px-2">
           <div className="flex gap-3 text-white text-lg">
             <a href={githubUrl} target="_blank" rel="noopener noreferrer">
               <BrandGithub className="hover:text-purple-400 transition" />
@@ -63,7 +65,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
           <button
             onClick={() => setOpen(true)}
-            className="text-sm bg-transparent border border-purple-500 px-6 py-1 rounded-full hover:bg-purple-600 transition"
+            className="text-xs sm:text-sm bg-transparent border border-purple-500 px-4 sm:px-6 py-1 rounded-full hover:bg-purple-600 transition"
           >
             Ver más
           </button>
@@ -89,10 +91,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                 <BrandGithub className="hover:text-purple-400 transition" />
               </a>
               {showLiveLink && liveUrl && (
-              <a href={liveUrl} target="_blank" rel="noopener noreferrer">
-                <Globe className="hover:text-purple-400 transition" />
-              </a>
-            )}
+                <a href={liveUrl} target="_blank" rel="noopener noreferrer">
+                  <Globe className="hover:text-purple-400 transition" />
+                </a>
+              )}
             </div>
           </div>
         </div>
