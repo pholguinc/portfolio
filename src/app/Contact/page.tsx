@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import {At, BrandInstagram, BrandFacebookSolid, ChatDots} from '@mynaui/icons-react'
+import { At, ChatDots } from '@mynaui/icons-react'
 
 const Contact: React.FC = () => {
   return (
@@ -15,7 +15,7 @@ const Contact: React.FC = () => {
           </div>
         </div>
 
-         <div className="flex flex-wrap jusify-start sm:justify-center gap-10 md:gap-20">
+        <div className="flex flex-wrap jusify-start sm:justify-center gap-10 md:gap-20">
           {/* Left section: Email */}
           <div className="contact- w-full md:w-auto">
             <table>
@@ -38,7 +38,7 @@ const Contact: React.FC = () => {
                           rel="noreferrer"
                           className="flex flex-row gap-2 text-lg hover:underline block"
                         >
-                          <At/> holguinpedro90@gmail.com
+                          <At /> holguinpedro90@gmail.com
                         </a>
                       </div>
                       <div className="link-underline transform -translate-x-full translate-z-0"></div>

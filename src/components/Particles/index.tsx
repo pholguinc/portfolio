@@ -236,6 +236,7 @@ const Particles: React.FC<ParticlesProps> = ({
     particleCount,
     particleSpread,
     speed,
+    particleColors,
     moveParticlesOnHover,
     particleHoverFactor,
     alphaParticles,
@@ -247,9 +248,9 @@ const Particles: React.FC<ParticlesProps> = ({
 
   return (
     <div
-    ref={containerRef}
-    className={`fixed top-0 left-0 w-full h-full z-0 pointer-events-none ${className}`}
-  />
+      ref={containerRef}
+      className={`fixed top-0 left-0 w-full h-full z-0 pointer-events-none ${className}`}
+    />
   );
 };
 

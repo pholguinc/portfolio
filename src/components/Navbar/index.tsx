@@ -88,7 +88,7 @@ function NavbarItem({
       className={`relative inline-flex items-center justify-center rounded-full ${className}`}
     >
       <button className="w-full h-full">
-        <Link href={href}> 
+        <Link href={href}>
           {children}
         </Link>
       </button>
@@ -160,7 +160,7 @@ export default function Navbar({
 
   const maxHeight = useMemo(
     () => Math.max(dockHeight, magnification + magnification / 2 + 4),
-    [magnification]
+    [dockHeight, magnification]
   );
   const heightRow = useTransform(isHovered, [0, 1], [panelHeight, maxHeight]);
   const height = useSpring(heightRow, spring);

@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import { ArrowLongUpRight } from "@mynaui/icons-react";
 
 interface ExperienceItem {
   role: string;
@@ -21,6 +20,7 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = ({
   sectionId = "experience",
   heading = "Experience",
   items,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   resumeLink,
 }) => {
   const [activeIndex, setActiveIndex] = useState(0);

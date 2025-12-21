@@ -1,17 +1,20 @@
 "use client";
 import React from "react";
-import "@/components/Hero/index.css"; 
+import Image from "next/image";
+import "@/components/Hero/index.css";
 
 export default function Hero() {
   return (
     <section className="flex items-center justify-center text-white px-6 sm:mt-15">
       <div className="flex flex-col md:flex-row items-center md:items-start gap-12 lg:gap-20 max-w-6xl w-full">
         {/* Imagen o avatar */}
-        <div className="w-48 h-48 sm:w-64 sm:h-64 lg:w-84 lg:h-84 rounded-full overflow-hidden flex-shrink-0">
-          <img
+        <div className="w-48 h-48 sm:w-64 sm:h-64 lg:w-84 lg:h-84 rounded-full overflow-hidden flex-shrink-0 relative">
+          <Image
             src="/hero.jpeg"
             alt="Foto de perfil"
-            className="w-full h-full object-cover"
+            fill
+            className="object-cover"
+            priority
           />
         </div>
 

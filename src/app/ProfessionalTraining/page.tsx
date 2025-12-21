@@ -3,7 +3,6 @@
 import { useState, useEffect } from "react";
 import TrainingItem from "@/components/TimeLine";
 import MetaBalls from "@/components/MetaBalls";
-import { ins } from "framer-motion/client";
 
 export default function ProfessionalTraining() {
   const trainingData = [
@@ -25,13 +24,13 @@ export default function ProfessionalTraining() {
       hasCertificate: true,
       certificateLink: "webscraping-python.pdf",
     },
-  
-  
+
+
     {
       date: "Agos 2023",
       title: "Universidad Angular - De Cero a Experto",
       institution: "Udemy",
-      description:"Curso básico de Angular desde cero hasta experto, cubriendo todos los aspectos fundamentales y avanzados del framework.",
+      description: "Curso básico de Angular desde cero hasta experto, cubriendo todos los aspectos fundamentales y avanzados del framework.",
       hasCertificate: true,
       certificateLink: "https://www.udemy.com/certificate/UC-9e7e515e-1a1b-494b-8b7e-f2e95574060f/"
 
@@ -138,6 +137,7 @@ export default function ProfessionalTraining() {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
