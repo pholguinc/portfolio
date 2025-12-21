@@ -4,8 +4,6 @@ import {
   Pencil,
   BrandChrome,
   Mobile,
-  FileText,
-  Search,
 } from "@mynaui/icons-react";
 import {
   motion,
@@ -101,12 +99,14 @@ const RollingGallery: React.FC<RollingGalleryProps> = ({
       const currentAngle = rotation.get();
       startInfiniteSpin(currentAngle);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [autoplay]);
 
   useEffect(() => {
     if (!autoplay) {
       controls.stop();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [autoplay]);
 
   const handleUpdate = (latest: ResolvedValues) => {
