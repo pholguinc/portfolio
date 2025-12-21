@@ -102,6 +102,16 @@ function Projects() {
           showLiveLink={true}
           liveUrl="https://twngelements-docs.vercel.app/"
         />
+
+        <ProjectCard
+          title="App PWA de Viajes Turísticos"
+          techs={["NextJS", "TailwindCSS", "TypeScript", "Python", "NestJS", "PWA"]}
+          imageSrc="/kodotakai.png"
+          description="App PWA de Viajes Turísticos con recomendaciones e IA"
+          githubUrl="https://github.com/orgs/Kodo-Takai/repositories"
+          showLiveLink={true}
+          liveUrl="https://frontend-app-kodotakai.vercel.app/"
+        />
       </div>
     </div>
   );
