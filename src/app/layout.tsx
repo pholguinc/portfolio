@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import SplashCursor from "@/components/SplashCursor";
 import Particles from "@/components/Particles";
 import Dock from "@/components/Navbar/index";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import {
   Home,
   Briefcase,
@@ -19,7 +20,7 @@ const items = [
   {
     icon: <Home size={30} />,
     label: "Inicio",
-    href:"/",
+    href: "/",
   },
   {
     icon: <Briefcase size={30} />,
@@ -29,17 +30,17 @@ const items = [
   {
     icon: <RoomService size={30} />,
     label: "Servicios",
-    href:"/Services",
+    href: "/Services",
   },
   {
     icon: <Code size={30} />,
     label: "Proyectos",
-    href:"/Projects",
+    href: "/Projects",
   },
   {
     icon: <AddQueue size={30} />,
     label: "Experiencia Profesional",
-    href:"/ProfessionalCareers",
+    href: "/ProfessionalCareers",
   },
 ];
 
@@ -87,7 +88,7 @@ export default function RootLayout({
             magnification={70}
           />
         </div>
-
+        <WhatsAppButton />
       </body>
     </html>
   );
