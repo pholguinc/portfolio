@@ -59,10 +59,12 @@ const RollingGallery: React.FC<RollingGalleryProps> = ({
 }) => {
   const galleryContent = content.length > 0 ? content : CARD_CONTENT;
 
-  const [isScreenSizeSm, setIsScreenSizeSm] = useState<boolean>(
-    window.innerWidth <= 640
-  );
+  const [isScreenSizeSm, setIsScreenSizeSm] = useState<boolean>(false);
+
   useEffect(() => {
+    // Initialize on mount
+    setIsScreenSizeSm(window.innerWidth <= 640);
+
     const handleResize = () => setIsScreenSizeSm(window.innerWidth <= 640);
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
